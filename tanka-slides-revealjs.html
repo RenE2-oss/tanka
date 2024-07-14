@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>短歌解説スライド</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.3.1/dist/reset.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.3.1/dist/reveal.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.3.1/dist/theme/white.css">
+    <style>
+        .reveal .slides section {
+            top: 0 !important;
+            writing-mode: vertical-rl;
+            text-orientation: upright;
+            height: 100%;
+            width: 100%;
+            font-family: "MS Mincho", "HiraMinProN-W3", serif;
+            font-size: 28px;
+            text-align: justify;
+        }
+        .reveal h1 {
+            font-size: 1.8em;
+            font-weight: normal;
+            margin: 0 0.5em 1em 0.5em;
+        }
+        .reveal ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            flex-direction: column-reverse;
+        }
+        .reveal li {
+            margin: 0.5em 0;
+            padding-right: 1em;
+            text-indent: -1em;
+        }
+        .reveal li:before {
+            content: "・";
+            padding-right: 0.5em;
+        }
+        .tanka {
+            font-size: 0.9em;  /* フォントサイズを小さく調整 */
+            line-height: 1.8;  /* 行間も調整 */
+            margin-right: 1em;
+        }
+    </style>
+</head>
+<body>
+    <div class="reveal">
+        <div class="slides">
+            <section>
+                <h1>短歌の基本</h1>
+                <p>短歌は日本の伝統的な定型詩です。</p>
+                <ul>
+                    <li>五七五七七の音数律</li>
+                    <li>全三十一音で構成</li>
+                    <li>上の句と下の句に分かれる</li>
+                    <li>季節や感情を簡潔に表現</li>
+                </ul>
+                <p>現代でも広く親しまれています。</p>
+            </section>
+
+            <section>
+                <h1>短歌の構造</h1>
+                <p>短歌は以下の構造を持ちます。</p>
+                <ul>
+                    <li>上の句：五音七音五音（五七五）</li>
+                    <li>下の句：七音七音（七七）</li>
+                </ul>
+                <p>例：</p>
+                <p class="tanka">
+                    あけぬれば<br>
+                    さりなむ人を<br>
+                    やまがくの<br>
+                    雪のながめに<br>
+                    ねさめてぞなく
+                </p>
+            </section>
+
+            <section>
+                <h1>短歌の特徴</h1>
+                <p>短歌の主な特徴：</p>
+                <ul>
+                    <li>簡潔な表現で深い感情を伝える</li>
+                    <li>自然や四季の描写が多い</li>
+                    <li>比喩や掛詞などの技法を用いる</li>
+                    <li>作者の心情を巧みに表現</li>
+                    <li>日常の些細な出来事も題材に</li>
+                </ul>
+                <p>古典から現代まで幅広く作られています。</p>
+            </section>
+
+            <section>
+                <h1>有名な短歌の例</h1>
+                <p>万葉集より額田王の歌：</p>
+                <p class="tanka">
+                    あかねさす<br>
+                    むらさきのゆき<br>
+                    すめのゆき<br>
+                    のもりはみずや<br>
+                    きみがそでふる
+                </p>
+                <p>解釈：<br>
+                夕日に照らされた野原で<br>
+                あなたが袖を振っているのを<br>
+                野守は見ていないのでしょうか</p>
+            </section>
+
+            <section>
+                <h1>現代短歌</h1>
+                <p>現代短歌の特徴：</p>
+                <ul>
+                    <li>現代的なテーマを扱う</li>
+                    <li>口語表現も積極的に使用</li>
+                    <li>社会問題や個人の内面を詠む</li>
+                    <li>伝統的な形式を保ちつつ革新的</li>
+                </ul>
+                <p>例（俵万智）：</p>
+                <p class="tanka">
+                    うれしくて<br>
+                    うれしくてことば足りたらず<br>
+                    きみとのめる<br>
+                    このちゃのあじよ
+                </p>
+            </section>
+
+            <section>
+                <h1>まとめ</h1>
+                <p>短歌は日本の文化を象徴する詩の形式です。</p>
+                <ul>
+                    <li>三十一音の中に思いを凝縮</li>
+                    <li>伝統を守りつつ現代に進化</li>
+                    <li>感性を磨き、表現力を育む</li>
+                    <li>日本語の美しさを再発見できる</li>
+                </ul>
+                <p>皆さんも短歌を詠んでみましょう。</p>
+            </section>
+        </div>
+    </div>
+    <script type="module">
+        import Reveal from 'https://cdn.jsdelivr.net/npm/reveal.js@4.3.1/dist/reveal.esm.js';
+        import RevealNotes from 'https://cdn.jsdelivr.net/npm/reveal.js@4.3.1/plugin/notes/notes.esm.js';
+
+        let deck = new Reveal({
+            controls: true,
+            progress: true,
+            center: true,
+            hash: true,
+            slideNumber: true,
+            transition: 'slide',
+            plugins: [RevealNotes]
+        })
+        deck.initialize();
+    </script>
+</body>
+</html>
